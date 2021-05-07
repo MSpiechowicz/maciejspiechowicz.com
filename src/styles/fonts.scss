@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue:400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+:root {
+  --fonts-default: "Roboto", sans-serif;
+  --fonts-headline: "Comic Neue", serif;
+
+  --font-weight-normal: 400;
+  --font-weight-headline: 600;
+
+  --font-color-main: #fff;
+  --font-color-secondary: #000;
+  --font-color-extra: #115fab;
+
+  --font-optimal-character-number: 70ch;
+  --font-max-character-number: 90ch;
+}
+
+h1,
+h2 {
+  font-family: var(--fonts-headline);
+  font-weight: var(--font-weight-headline);
+}
+
+p {
+  font-size: large;
+}

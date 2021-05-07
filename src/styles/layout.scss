@@ -1,0 +1,70 @@
+@import "./fonts.scss";
+@import "./header.scss";
+@import "./footer.scss";
+
+@import "./pages/page_home.scss";
+
+:root {
+  --color-background-body: #f9f9f9;
+  --color-background-section: #1e252b;
+  --color-background-pages: #fff;
+
+  --color-accent-1: #3a455a;
+  --color-accent-2: #115fab;
+  --color-accent-3: #6bb252;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--color-background-body);
+  font-family: var(--fonts-default);
+  font-weight: var(--font-weight-normal);
+  font-kerning: none;
+  font-size: medium;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+}
+
+.image-signature-short {
+  width: 78px;
+  height: 48px;
+}
+
+.image-signature-full {
+  width: 286px;
+  height: 48px;
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 0.5em auto;
+  width: 1440px;
+  height: 900px;
+  border: 10px solid var(--color-background-section);
+}
+
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: var(--color-background-pages);
+
+  .page-content-primary {
+    margin-left: 1%;
+    border: 1px solid;
+    width: 67%;
+  }
+
+  .page-content-secondary {
+    margin-right: 1%;
+    border: 1px solid;
+    width: 30%;
+  }
+}

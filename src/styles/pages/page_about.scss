@@ -1,0 +1,30 @@
+.page-about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-content: baseline;
+  height: 100%;
+}
+
+.page-about__grid--description {
+  grid-row: auto;
+  grid-column: 1 / span 2;
+  margin-left: 1.2rem;
+
+  p {
+    width: var(--font-max-character-number);
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  ul {
+    font-size: large;
+    font-weight: var(--font-weight-normal);
+    list-style: none;
+    padding: 0;
+
+    li {
+      line-height: 1.8em;
+    }
+  }
+}

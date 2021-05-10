@@ -3,6 +3,7 @@
 @import "./footer.scss";
 
 @import "./pages/page_home.scss";
+@import "./pages/page_about.scss";
 @import "./pages/page_projects.scss";
 @import "./pages/page_not_found.scss";
 
@@ -71,4 +72,8 @@ body {
     border: 1px solid;
     width: 30%;
   }
+}
+
+p {
+  line-height: 1.8em;
 }

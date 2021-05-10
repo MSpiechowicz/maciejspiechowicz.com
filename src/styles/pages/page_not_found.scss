@@ -1,0 +1,12 @@
+.page-not-found__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+
+    h2 {
+        font-family: var(--fonts-headline);
+        font-weight: var(--font-weight-headline);
+    }
+}

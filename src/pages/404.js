@@ -1,13 +1,24 @@
 import * as React from "react"
-
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
     <Seo title="404: Not found" />
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className="page-not-found__flex">
+      <div className="page-not-found__flex_image">
+        <StaticImage
+          src="../images/404-black.png"
+          width={600}
+          quality={95}
+          layout="fixed"
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="404"
+        />
+      </div>
+      <h2>Page Not Found</h2>
+    </div>
   </Layout>
 )
 

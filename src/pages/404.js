@@ -10,7 +10,7 @@ const NotFoundPage = () => (
       <div className="page-not-found__flex_image">
         <StaticImage
           src="../images/404-black.png"
-          width={600}
+          width={512}
           quality={95}
           layout="fixed"
           formats={["AUTO", "WEBP", "AVIF"]}

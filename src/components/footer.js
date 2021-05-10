@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Linkedin, Facebook, Twitter } from "react-feather"
+import { Linkedin, Facebook, Twitter, GitHub } from "react-feather"
 
 export default function Footer() {
   return (
@@ -15,6 +15,11 @@ export default function Footer() {
           <li>
             <Link to="http://www.facebook.com/maciej.spiechowicz">
               <Facebook className="list-social-icon" />
+            </Link>
+          </li>
+          <li>
+            <Link to="http://github.com/mspiechowicz">
+              <GitHub className="list-social-icon" />
             </Link>
           </li>
           <li>

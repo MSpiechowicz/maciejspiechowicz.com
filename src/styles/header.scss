@@ -20,16 +20,16 @@ nav a {
   text-decoration: none;
 
   &:first-child {
-    padding-right: 4%;
+    padding-right: 1em;
   }
   
   &:not(:first-child):not(:last-child) {
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   &:last-child {
-    padding-left: 4%;
+    padding-left: 1em;
   }
 
   &:hover {

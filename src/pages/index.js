@@ -11,18 +11,18 @@ export default function HomePage() {
         <div className="page-home__grid--description">
           <h1>Welcome at my personal website :)</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            My name is Maciej Spiechowicz. I am an IT Project Manager and
+            Software Engineer with experience in both Front-end and Back-end
+            technologies. I assume that a Programmer can be anyone, but not
+            everyone can think from the perspective of complex mechanisms taking
+            place in business field. For almost 14 years of my professional
+            career I have seen many examples of badly managed IT projects and
+            wasting the necessary funds that could be successfully used to
+            increase the position on the market. That is why I decided that I
+            want to help other companies accomplished their goals with less
+            effort and better overall quality.
           </p>
         </div>
-
         <div className="page-home__grid--image">
           <StaticImage
             src="../images/foto.png"
@@ -33,6 +33,7 @@ export default function HomePage() {
             alt="Personal Foto"
           />
         </div>
+        <h3>Life is too short to do the things that you don't like doing.</h3>
       </div>
     </Layout>
   )

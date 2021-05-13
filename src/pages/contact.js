@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import emailjs from "emailjs-com"
@@ -37,7 +36,7 @@ export default class ContactPage extends Component {
 
   handleSubmit(event) {
     event.preventDefault()
-    console.log(event.target.checkValidity())
+
     if (!event.target.checkValidity()) {
       this.setState({
         displayErrors: true,
@@ -48,6 +47,7 @@ export default class ContactPage extends Component {
       })
       return
     }
+
     this.setState({
       displayErrors: false,
       statusVisible: true,
@@ -56,7 +56,15 @@ export default class ContactPage extends Component {
       disabled: true,
     })
 
-    // emailjs.sendForm("service_hl7sooj", "service_hl7sooj", event.target);
+    emailjs
+      .sendForm(
+        "service_hl7sooj",
+        "template_v1qazkg",
+        event.target,
+        "user_7NMefnaROmBVDXSe3INct"
+      )
+      .then(result => console.log(`Message sent successfully with ${result}`))
+      .catch(error => console.log(`Message sent error with ${error}`))
   }
 
   render() {
@@ -114,10 +122,7 @@ export default class ContactPage extends Component {
                   onChange={this.handleChange}
                   required
                 />
-                <button
-                  type="submit"
-                  disabled={this.state?.disabled ? "true" : ""}
-                >
+                <button type="submit" disabled={this.state?.disabled}>
                   Submit
                 </button>
                 <div className="page-contact__form__status">

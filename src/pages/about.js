@@ -27,16 +27,16 @@ export default function AboutPage() {
             </li>
             <li>Which countries have you worked with?</li>
             <li>
-              <b>Mostly: Poland, USA, Great Britain and Vietnam</b>
+              <b>Mostly: Poland, USA, UK and Vietnam</b>
             </li>
             <li>What is your preferred technology stack?</li>
             <li>
               <b>
-                At the moment I do prefer JavaScript in both Front-end and
+                At the moment I prefer JavaScript in both Front-end and
                 Back-end combined with Node.js and React
               </b>
             </li>
-            <li>What technologies did you work in?</li>
+            <li>What technologies did you work with?</li>
             <li>
               <b>Java, C#, Python, JavaScript, TypeScript</b>
             </li>

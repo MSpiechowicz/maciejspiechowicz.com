@@ -1,12 +1,20 @@
 import React, { Component } from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import emailjs from "emailjs-com"
+import success from "../images/icons/success.png"
+import error from "../images/icons/error.png"
 
 export default class ContactPage extends Component {
   constructor(props) {
     super(props)
 
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  componentDidMount() {
     this.setState({
       user_first_name: "",
       user_last_name: "",
@@ -15,11 +23,10 @@ export default class ContactPage extends Component {
       user_message: "",
       displayErrors: false,
       statusVisible: false,
-      statusMessage: ""
+      statusMessage: "",
+      image: "",
+      disabled: false,
     })
-
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange(event) {
@@ -32,12 +39,23 @@ export default class ContactPage extends Component {
     event.preventDefault()
     console.log(event.target.checkValidity())
     if (!event.target.checkValidity()) {
-      this.setState({ displayErrors: true, statusVisible: true, statusMessage: "Please fill the Form data" })
-
+      this.setState({
+        displayErrors: true,
+        statusVisible: true,
+        statusMessage: "Please fill the Form data",
+        image: error,
+        disabled: false,
+      })
       return
     }
-    this.setState({ displayErrors: false, statusVisible: true, statusMessage: "Success" })
-    console.log(this.state)
+    this.setState({
+      displayErrors: false,
+      statusVisible: true,
+      statusMessage: "Message was sent",
+      image: success,
+      disabled: true,
+    })
+
     // emailjs.sendForm("service_hl7sooj", "service_hl7sooj", event.target);
   }
 
@@ -66,14 +84,12 @@ export default class ContactPage extends Component {
                   name="user_first_name"
                   placeholder="First Name"
                   onChange={this.handleChange}
-                  // onFocus={this.placeholder=""}
                   required
                 />
                 <input
                   type="text"
                   name="user_last_name"
                   placeholder="Last Name"
-                  // onFocus="this.placeholder=''"
                   onChange={this.handleChange}
                   required
                 />
@@ -98,19 +114,33 @@ export default class ContactPage extends Component {
                   onChange={this.handleChange}
                   required
                 />
-                <button type="submit">Submit</button>
-              </form>
-              <div className="page-contact__form__status">
-                <p
-                  className={
-                    this.state?.statusVisible ? "page-contact__form__status--active" : ""
-                  }
+                <button
+                  type="submit"
+                  disabled={this.state?.disabled ? "true" : ""}
                 >
-                  {this.state?.statusMessage}
-                </p>
-                {/* <p className={this.state?.status}>Status: Server Error</p>
-                <p className={this.state?.status}>Status: Success</p> */}
-              </div>
+                  Submit
+                </button>
+                <div className="page-contact__form__status">
+                  <div
+                    className={
+                      this.state?.image
+                        ? "page-contact__form__status__image--active"
+                        : "page-contact__form__status__image"
+                    }
+                  >
+                    <img id="A" alt="ADS" src={this.state?.image}></img>
+                  </div>
+                  <span
+                    className={
+                      this.state?.statusVisible
+                        ? "page-contact__form__status_message--active"
+                        : "page-contact__form__status_message"
+                    }
+                  >
+                    {this.state?.statusMessage}
+                  </span>
+                </div>
+              </form>
             </div>
           </div>
         </div>

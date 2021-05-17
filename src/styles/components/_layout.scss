@@ -12,13 +12,6 @@
   --color-accent-3: #6bb252;
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  background: var(--color-background-body);
-}
-
 .image-signature-short {
   width: 78px;
   height: 48px;
@@ -34,7 +27,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
-  margin: 0.5em auto;
+  margin: auto;
   height: auto;
   width: auto;
   max-width: 1440px;

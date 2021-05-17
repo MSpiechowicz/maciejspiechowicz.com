@@ -1,28 +1,3 @@
-// @mixin progress-bar($width) {
-//   .page-projects__grid__progress-bar {
-//     margin-top: 2em;
-//     margin-right: 0.4em;
-//     position: relative;
-//     border-radius: 4px;
-//     height: 10px;
-//     box-sizing: border-box;
-//     background: var(--color-accent-1);
-//     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-
-//     .page-projects__grid__progress-bar--loading {
-//       position: absolute;
-//       display: inline-block;
-//       padding-right: 0.4em;
-//       width: $width;
-//       height: inherit;
-//       background: var(--color-accent-3);
-//       box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-//       border-radius: 4px;
-//       overflow: hidden;
-//     }
-//   }
-// }
-
 .page-projects__grid {
   display: grid;
   grid-template-rows: auto;

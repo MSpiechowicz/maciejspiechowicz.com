@@ -44,6 +44,7 @@ body {
 
 .page-content {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   height: 80%;
   margin-top: 1em;
@@ -63,6 +64,13 @@ body {
   }
 }
 
-// p {
-//   line-height: 1.8em;
-// }
+@media screen and (max-width: 768px) {
+  .page-content {
+    flex-direction: column;
+
+    .page-content-primary {
+      margin-right: 1%;
+      width: auto;
+    }
+  }
+}

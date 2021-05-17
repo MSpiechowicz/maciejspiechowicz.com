@@ -5,6 +5,9 @@
   --fonts-default: "Roboto", sans-serif;
   --fonts-headline: "Comic Neue", serif;
 
+  --font-base-size: 1.15em;
+  --font-scale-ratio: 1.2;
+
   --font-weight-normal: 400;
   --font-weight-headline: 600;
 
@@ -23,6 +26,15 @@ h3 {
   font-weight: var(--font-weight-headline);
 }
 
-p {
-  font-size: large;
+p, span {
+  font-size: var(--font-base-size);
+}
+
+html, body {
+  font-family: var(--fonts-default);
+  font-weight: var(--font-weight-normal);
+  font-kerning: none;
+  font-size: medium;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
 }

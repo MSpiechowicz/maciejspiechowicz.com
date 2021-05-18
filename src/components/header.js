@@ -12,7 +12,7 @@ export default function Header() {
           <h3>Project Manager & Software Engineer</h3>
         </div>
         <div className="header-menu">
-          <input type="checkbox" class="header-menu__button--activate"></input>
+          <input type="checkbox" className="header-menu__button--activate"></input>
           <div className="header-menu__hamburger">
             <div></div>
           </div>

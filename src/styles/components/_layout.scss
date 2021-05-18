@@ -1,69 +1,68 @@
-@use "./fonts.scss";
-@use "./header.scss";
-@use "./footer.scss";
+// @use "./header.scss";
+// @use "./footer.scss";
 
-:root {
-  --color-background-body: #f9f9f9;
-  --color-background-section: #1e252b;
-  --color-background-pages: #fff;
+// :root {
+//   --color-background-body: #f9f9f9;
+//   --color-background-section: #1e252b;
+//   --color-background-pages: #fff;
 
-  --color-accent-1: #3a455a;
-  --color-accent-2: #115fab;
-  --color-accent-3: #6bb252;
-}
+//   --color-accent-1: #3a455a;
+//   --color-accent-2: #115fab;
+//   --color-accent-3: #6bb252;
+// }
 
-.image-signature-short {
-  width: 78px;
-  height: 48px;
-}
+// .image-signature-short {
+//   width: 78px;
+//   height: 48px;
+// }
 
-.image-signature-full {
-  width: 286px;
-  height: 48px;
-}
+// .image-signature-full {
+//   width: 286px;
+//   height: 48px;
+// }
 
-.page-layout {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: center;
-  margin: auto;
-  height: auto;
-  width: auto;
-  max-width: 1440px;
-  max-height: 900px;
-  border: 10px solid var(--color-background-section);
-}
+// .page-layout {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-content: center;
+//   margin: auto;
+//   height: auto;
+//   width: auto;
+//   max-width: 1440px;
+//   max-height: 900px;
+//   border: 10px solid var(--color-background-section);
+// }
 
-.page-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 80%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  background: var(--color-background-pages);
+// .page-content {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   height: 80%;
+//   margin-top: 1em;
+//   margin-bottom: 1em;
+//   background: var(--color-background-pages);
 
-  .page-content-primary {
-    margin-left: 1%;
-    border: 1px solid;
-    width: 67%;
-  }
+//   .page-content-primary {
+//     margin-left: 1%;
+//     border: 1px solid;
+//     width: 67%;
+//   }
 
-  .page-content-secondary {
-    margin-right: 1%;
-    border: 1px solid;
-    width: 30%;
-  }
-}
+//   .page-content-secondary {
+//     margin-right: 1%;
+//     border: 1px solid;
+//     width: 30%;
+//   }
+// }
 
-@media screen and (max-width: 768px) {
-  .page-content {
-    flex-direction: column;
+// @media screen and (max-width: 768px) {
+//   .page-content {
+//     flex-direction: column;
 
-    .page-content-primary {
-      margin-right: 1%;
-      width: auto;
-    }
-  }
-}
+//     .page-content-primary {
+//       margin-right: 1%;
+//       width: auto;
+//     }
+//   }
+// }

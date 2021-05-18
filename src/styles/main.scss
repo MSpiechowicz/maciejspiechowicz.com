@@ -1,9 +1,36 @@
 @use "./pages/pages.scss";
+@use "./abstracts/abstracts.scss";
 @use "./components/components.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html,
 body {
   padding: 0;
-  margin: 0.5%;
-  background: var(--color-background-body);
+  margin: 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+header,
+section {
+  padding: 1rem 0;
+}
+
+.container {
+  margin-inline: auto;
+  width: 100%;
 }

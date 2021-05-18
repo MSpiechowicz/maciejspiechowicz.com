@@ -1,0 +1,24 @@
+:root {
+  --color-background-main: #f5f5f5;
+  --color-background-secondary: #1e252b;
+
+  --color-section-main: #fff;
+  --color-section-secondary: #1e252b;
+  
+  --color-font-main: #fff;
+  --color-font-secondary: #1e252b;
+  --color-font-extra: #115fab;
+  --color-font-link: #6bb252;
+}
+
+html, body {
+  background-color: var(--color-background-main);
+}
+
+.background__color--main {
+  background-color: var(--color-background-main);
+}
+
+.background__color--secondary {
+  background-color: var(--color-background-secondary);
+}

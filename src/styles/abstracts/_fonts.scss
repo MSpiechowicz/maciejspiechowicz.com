@@ -1,0 +1,74 @@
+@import "https://fonts.googleapis.com/css?family=Comic+Neue:400";
+@import "https://fonts.googleapis.com/css?family=Roboto:400";
+
+:root {
+  --font-family-main: "Roboto", sans-serif;
+  --font-family-secondary: "Comic Neue", serif;
+
+  --font-size-main: 1.3125rem;
+
+  --font-letter-spacing: 0.05rem;
+
+  --font-line-height-main: 1.6;
+  --font-line-height-secondary: 1;
+
+  --font-weight-normal: 400;
+  --font-weight-headline: 600;
+
+  --font-max-character-number: 70ch;
+}
+
+html,
+body {
+  font-size: var(--font-size-main);
+  font-family: var(--font-family-main);
+  font-weight: var(--font-weight-normal);
+  font-kerning: none;
+  letter-spacing: var(--font-letter-spacing);
+  line-height: var(--font-line-height-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-headline);
+  line-height: var(--font-line-height-secondary);
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --font-size-main: 0.9rem;
+  }
+}
+
+// p,
+// span {
+//   width: var(--font-max-character-number);
+//   text-align: justify;
+//   text-justify: inter-word;
+// }
+
+// html,
+// body {
+//   font-family: var(--fonts-default);
+//   font-weight: var(--font-weight-normal);
+//   font-kerning: none;
+//   font-size: var(--font-base-size);
+//   line-height: 1.8em;
+//   letter-spacing: 0.05em;
+// }
+
+// @media screen and (max-width: 768px) {
+//   :root {
+//     --font-max-character-number: 50ch;
+//   }
+
+//   p,
+//   span {
+//     width: auto !important;
+//   }
+// }

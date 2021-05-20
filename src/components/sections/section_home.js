@@ -20,7 +20,7 @@ export default function HomeSection() {
       </div>
       <div className="page-home__grid--image">
         <StaticImage
-          src="../images/foto.png"
+          src="../../images/foto.png"
           width={275}
           quality={95}
           layout="fixed"

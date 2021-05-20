@@ -23,61 +23,29 @@ header > .container {
   grid-row: 2;
 }
 
-.header-menu {
+.header-button {
+  margin-right: 1rem;
   grid-column: 4;
   grid-row: 1;
-  justify-self: end;
-  align-self: center;
-  padding-right: 1rem;
+  display: grid;
+  justify-content: end;
+  align-items: center;
 
-  &__button--activate {
-    position: absolute;
-    display: inherit;
-    z-index: 1;
+  &__input {
+    grid-row: 1;
+    grid-column: 1;
     cursor: pointer;
-    top: 1.8rem;
     opacity: 0;
-    transform: scale(2);
-  }
-
-  &__navigation {
-    position: absolute;
-    margin-top: 4.325rem;
-    padding-top: 1rem;
-    padding-inline: 1rem;
-    // top: 5.3125rem;
-    right: -9rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    transition: all 0.5s ease-in-out;
-
-    & > * + * {
-      margin-top: 0.625rem;
-    }
-
-    &__item a {
-      display: flex;
-      align-items: center;
-    }
-
-    &__item svg {
-      margin-right: 0.625rem;
-    }
-
-    &__item a:visited {
-      color: var(--color-font-main);
-    }
-
-    &__item a:hover {
-      color: var(--color-font-extra);
-    }
+    z-index: 2;
+    transform: scale(1.8);
   }
 
   &__hamburger {
+    grid-row: 1;
+    grid-column: 1;
     cursor: pointer;
     width: 1rem;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,9 +87,55 @@ header > .container {
     }
   }
 
-  & input:checked ~ &__navigation {
-    overflow: visible;
-    transform: translateX(-9rem);
+//   & input:checked & ~ .header-menu {
+
+// transform: translateY(2rem);
+//     // overflow: visible;
+    
+//   }
+}
+
+.header-menu {
+  grid-column: 4;
+  grid-row: 1;
+  justify-self: end;
+  align-self: center;
+  padding-right: 1rem;
+
+  &__navigation {
+    position: absolute;
+    margin-top: 3rem;
+    // padding-top: 1rem;
+    padding-inline: 1rem;
+    // top: 5.3125rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    transition: all 0.5s ease-in-out;
+
+    & > * + * {
+      margin-top: 0.625rem;
+    }
+
+    &__item a {
+      display: flex;
+      align-items: center;
+    }
+
+    &__item svg {
+      margin-right: 0.625rem;
+    }
+
+    &__item a:visited {
+      color: var(--color-font-main);
+    }
+
+    &__item a:hover {
+      color: var(--color-font-extra);
+    }
   }
 }
 

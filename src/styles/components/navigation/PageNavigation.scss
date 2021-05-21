@@ -1,0 +1,9 @@
+@use "./PageNavigationMenu.scss";
+@use "./PageNavigationMenuItem.scss";
+
+.page-navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}

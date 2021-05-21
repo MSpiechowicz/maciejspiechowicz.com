@@ -1,5 +1,4 @@
 import React from "react"
-import { Home, HelpCircle, Mail } from "react-feather"
 
 export default function Header() {
   return (
@@ -20,32 +19,7 @@ export default function Header() {
             <div></div>
           </div>
         </div>
-        <div className="header-menu">
-          <div className="header-menu__navigation background__color--secondary">
-            <div className="header-menu__navigation__item">
-              <a href="/" alt="Home" className="text__decoration--none">
-                <Home />
-                Home
-              </a>
-            </div>
-            <div className="header-menu__navigation__item">
-              <a href="/about" alt="About" className="text__decoration--none">
-                <HelpCircle />
-                About
-              </a>
-            </div>
-            <div className="header-menu__navigation__item">
-              <a
-                href="/contact"
-                alt="Contact"
-                className="text__decoration--none"
-              >
-                <Mail />
-                Contact
-              </a>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </header>
   )

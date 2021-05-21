@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageSection = () => {
     return (
-        <section></section>
+        <section>Lorem, ipsum dolor.</section>
     )
 }
 

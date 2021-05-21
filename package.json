@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@material-ui/icons": "^4.11.2",
     "emailjs-com": "^2.6.4",
     "gatsby": "^3.4.0",
     "gatsby-link": "3.3.0",
@@ -20,7 +21,6 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-feather": "2.0.9",
     "react-helmet": "^6.1.0",
     "sass": "1.32.12"
   },

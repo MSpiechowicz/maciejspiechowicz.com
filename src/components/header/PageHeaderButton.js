@@ -12,9 +12,9 @@ const PageHeaderButton = () => {
   }
 
   return (
-    <div className="page-header__button" onClick={changeVisibility}>
+    <button className="page-header__button" onClick={changeVisibility}>
       {visible ? <MenuOpenRounded /> : <MenuRounded />}
-    </div>
+    </button>
   )
 }
 

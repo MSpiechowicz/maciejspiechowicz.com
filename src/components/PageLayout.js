@@ -1,8 +1,8 @@
 import React, { Fragment } from "react"
-import PageHeader from "../components/PageHeader"
+import PageHeader from "../components/header/PageHeader"
 import PageContent from "../components/PageContent"
 import PageNavigation from "../components/navigation/PageNavigation"
-import PageFooter from "../components/PageFooter"
+import PageFooter from "../components/footer/PageFooter"
 
 const PageLayout = props => {
   return (

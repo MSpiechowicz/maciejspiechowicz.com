@@ -1,7 +1,7 @@
 @use "./PageFooterContent";
 
 footer {
-  color: var(--color-font-main);
   width: 100%;
+  padding: 1rem 0;
   max-height: 10%;
 }

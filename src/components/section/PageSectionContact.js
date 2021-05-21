@@ -3,7 +3,7 @@ import emailjs from "emailjs-com"
 import success from "../../images/icons/success.png"
 import error from "../../images/icons/error.png"
 
-export default class ContactSection extends Component {
+export default class PageSectionContact extends Component {
   constructor(props) {
     super(props)
 

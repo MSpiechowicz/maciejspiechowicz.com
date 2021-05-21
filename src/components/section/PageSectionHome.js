@@ -1,11 +1,10 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-export default function HomeSection() {
+export default function PageSectionHome() {
   return (
-    <div className="page-home__grid">
-      <div className="page-home__grid--description">
-        <h1>Welcome at my personal website :)</h1>
+    <div className="page-content__section__home">
+      <div className="page-content__section__home--description">
         <p>
           My name is Maciej Spiechowicz. I am an IT Project Manager and Software
           Engineer with experience in both Front-end and Back-end technologies.
@@ -18,7 +17,7 @@ export default function HomeSection() {
           accomplished their goals with less effort and better overall quality.
         </p>
       </div>
-      <div className="page-home__grid--image">
+      <div className="page-content__section__home--image">
         <StaticImage
           src="../../images/foto.png"
           width={275}
@@ -28,12 +27,6 @@ export default function HomeSection() {
           alt="Personal Foto"
         />
       </div>
-      <h3>
-        <i>
-          &#8222;Life is too short to do the things that you don't like
-          doing&#8220;
-        </i>
-      </h3>
     </div>
   )
 }

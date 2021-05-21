@@ -1,7 +1,7 @@
 import React from "react"
 import Project from "../project"
 
-export default function ProjectSection() {
+export default function PageSectionProject() {
   return (
     <div className="page-projects__grid">
       <h1>Recent Projects</h1>

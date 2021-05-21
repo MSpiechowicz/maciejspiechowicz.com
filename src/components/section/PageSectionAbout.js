@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function AboutSection() {
+export default function PageSectionAbout() {
   return (
     <div className="page-about__grid">
       <div className="page-about__grid--description">

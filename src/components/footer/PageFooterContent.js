@@ -40,7 +40,7 @@ const PageFooterContent = () => {
     <div className="page-footer__content">
       <ul>
         {contactItems.map(item => (
-          <PageFooterContentItem url={item.url} icon={item.icon} />
+          <PageFooterContentItem key={item.key} url={item.url} icon={item.icon} />
         ))}
       </ul>
       <h3>

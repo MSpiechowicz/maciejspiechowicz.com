@@ -1,0 +1,8 @@
+.page-header__content {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+
+  & > * + * {
+    margin-top: 0.5125rem;
+  }
+}

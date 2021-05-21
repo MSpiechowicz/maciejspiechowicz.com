@@ -1,5 +1,5 @@
 @use "./pages/pages.scss";
-@use "./abstracts/abstracts.scss";
+@use "./abstracts/PageAbstracts.scss";
 @use "./components/components.scss";
 
 *,
@@ -26,10 +26,10 @@ h6 {
   margin: 0;
 }
 
-header,
-section {
-  padding: 1rem 0;
-}
+// header,
+// section {
+//   padding: 1rem 0;
+// }
 
 .container {
   margin-inline: auto;

@@ -1,0 +1,13 @@
+.page-header__button {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+  justify-self: end;
+  align-self: center;
+  margin-top: 0.5125rem;
+  margin-right: 0.5125rem;
+
+ svg {
+   height: 2rem;
+   width: 2rem;
+ }
+}

@@ -1,8 +1,10 @@
-import React, { useState, useContext, useEffect } from "react"
+import React from "react"
 import PageNavigationMenu from "./PageNavigationMenu"
-import StoreNavigation from "../../store/StoreNavigation"
+import { useSelector } from "react-redux"
 
 const PageNavigation = () => {
+  const visible = useSelector(state => state.isVisible)
+
   return (
     <div className="page-navigation">
       <PageNavigationMenu />

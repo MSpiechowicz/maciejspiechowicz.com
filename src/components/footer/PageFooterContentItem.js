@@ -1,9 +1,11 @@
 import React from "react"
 
-const PageFooterContentItem = ({ url, icon }) => {
+const PageFooterContentItem = ({ url, alt, icon }) => {
   return (
     <li>
-      <a href={url}>{icon}</a>
+      <a href={url} target="_blank" alt={alt} rel="noreferrer">
+        {icon}
+      </a>
     </li>
   )
 }

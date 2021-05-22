@@ -13,12 +13,12 @@ const PageFooterContent = () => {
     {
       key: "footer_contact_1",
       icon: <LinkedIn />,
-      url: "http://www.linkedin.com/in/mspiechowicz",
+      url: "https://pl.linkedin.com/in/mspiechowicz",
       alt: "LinkedIn",
     },
     {
       key: "footer_contact_2",
-      icon: <GitHub />,
+      icon: <GitHub style={{ width: "1.25rem" }} />,
       url: "http://github.com/mspiechowicz",
       alt: "GitHub",
     },
@@ -40,14 +40,19 @@ const PageFooterContent = () => {
     <div className="page-footer__content">
       <ul>
         {contactItems.map(item => (
-          <PageFooterContentItem key={item.key} url={item.url} icon={item.icon} />
+          <PageFooterContentItem
+            key={item.key}
+            url={item.url}
+            icon={item.icon}
+            alt={item.alt}
+          />
         ))}
       </ul>
-      <h3>
+      <h5>
         {new Date().getFullYear()}&nbsp;
-        <CopyrightRounded />
+        <CopyrightRounded style={{ width: "1rem" }} />
         &nbsp;Maciej Spiechowicz
-      </h3>
+      </h5>
     </div>
   )
 }

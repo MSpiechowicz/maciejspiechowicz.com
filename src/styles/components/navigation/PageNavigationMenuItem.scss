@@ -1,0 +1,15 @@
+.page-navigation__menu__item {
+  width: 100%;
+
+  a {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3125rem;
+    align-items: center;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: var(--color-font-extra);
+  }
+}

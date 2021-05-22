@@ -2,18 +2,25 @@ import React from "react"
 
 const PageSectionAbout = () => {
   const faqItems = [
-    "What is the largest budget of the project that you supervised?",
-    "~1 000 000 USD",
-    "Which countries have you worked with?",
-    "Mostly: Poland, USA, UK and Vietnam",
-    "What is your preferred technology stack?",
-    "At the moment I prefer JavaScript in both Front-end and Back-end combined with Node.js and React",
-    "What technologies did you work with?",
-    "Java, C#, Python, JavaScript, TypeScript",
-    "What new are you learning recently?",
-    "React, Vue and Flutter",
-    "Scrum or Waterfall?",
-    "Kanban :)",
+    {
+      key: "faq_item_1",
+      data: "What is the largest budget of the project that you supervised?",
+    },
+    { key: "faq_item_2", data: "~1 000 000 USD" },
+    { key: "faq_item_3", data: "Which countries have you worked with?" },
+    { key: "faq_item_4", data: "Mostly: Poland, USA, UK and Vietnam" },
+    { key: "faq_item_5", data: "What is your preferred technology stack?" },
+    {
+      key: "faq_item_6",
+      data:
+        "At the moment I prefer JavaScript in both Front-end and Back-end combined with Node.js and React",
+    },
+    { key: "faq_item_7", data: "What technologies did you work with?" },
+    { key: "faq_item_8", data: "Java, C#, Python, JavaScript, TypeScript" },
+    { key: "faq_item_9", data: "What new are you learning recently?" },
+    { key: "faq_item_10", data: "React, Vue and Flutter" },
+    { key: "faq_item_11", data: "Scrum or Waterfall?" },
+    { key: "faq_item_12", data: "Kanban :)" },
   ]
 
   return (
@@ -28,7 +35,7 @@ const PageSectionAbout = () => {
         <h1>#FAQ</h1>
         <ul>
           {faqItems.map(item => (
-            <li>{item}</li>
+            <li key={item.key}>{item.data}</li>
           ))}
         </ul>
       </div>

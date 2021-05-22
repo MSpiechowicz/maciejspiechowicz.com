@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-export default function PageSectionHome() {
+const PageSectionHome = () => {
   return (
     <div className="page-content__section__home">
       <div className="page-content__section__home--description">
@@ -30,3 +30,5 @@ export default function PageSectionHome() {
     </div>
   )
 }
+
+export default PageSectionHome

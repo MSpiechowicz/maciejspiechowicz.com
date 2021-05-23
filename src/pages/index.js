@@ -13,20 +13,17 @@ const index = () => {
   const sectionItems = [
     {
       key: "page_content_section_item_1",
-      title: "Welcome at my personal website :)",
-      subTitle: "Life is too short to do the things that you don't like doing",
+      title: "#Hello",
       content: <PageSectionHome />,
     },
     {
       key: "page_content_section_item_2",
       title: "#Whoami",
-      subTitle: "",
       content: <PageSectionAbout />,
     },
     {
       key: "page_content_section_item_3",
-      title: "Projects",
-      subTitle: "",
+      title: "#Project",
       content: <PageSectionProject />,
     },
   ]
@@ -38,7 +35,6 @@ const index = () => {
           <PageSection
             key={item.key}
             title={item.title}
-            subTitle={item.subTitle}
             content={item.content}
           />
         ))}

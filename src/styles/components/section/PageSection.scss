@@ -4,3 +4,8 @@
 @use "./PageSectionHome.scss";
 @use "./PageSectionProject.scss";
 @use "./PageSectionProjectItem.scss";
+
+.page-content__section {
+  margin-top: 1.5rem;
+  margin-inline: 1.5rem;
+}

@@ -6,7 +6,7 @@ const PageNavigation = () => {
   const visible = useSelector(state => state.isVisible)
 
   return (
-    <div
+    <nav
       className={
         visible
           ? `page-navigation background__color--secondary font__color--main visible`
@@ -14,7 +14,7 @@ const PageNavigation = () => {
       }
     >
       <PageNavigationMenu />
-    </div>
+    </nav>
   )
 }
 

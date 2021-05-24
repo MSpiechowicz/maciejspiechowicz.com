@@ -1,12 +1,12 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-const PageSectionHome = () => {
+const PageSectionHello = () => {
   return (
-    <div className="page-content__section__home">
+    <div id="Hello" className="page-content__section__hello">
       <StaticImage
         src="../../images/foto.png"
-        className="page-content__section__home--image"
+        className="page-content__section__hello--image"
         quality={95}
         layout="constrained"
         formats={["AUTO", "WEBP", "AVIF"]}
@@ -32,4 +32,4 @@ const PageSectionHome = () => {
   )
 }
 
-export default PageSectionHome
+export default PageSectionHello

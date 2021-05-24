@@ -8,6 +8,10 @@
     align-items: center;
   }
 
+  a:visited {
+    color: var(--color-font-main);
+  }
+
   a:hover {
     cursor: pointer;
     color: var(--color-font-extra);

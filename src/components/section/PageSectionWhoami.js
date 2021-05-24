@@ -1,6 +1,6 @@
 import React from "react"
 
-const PageSectionAbout = () => {
+const PageSectionWhoami = () => {
   const faqItems = [
     {
       key: "faq_item_1",
@@ -38,7 +38,7 @@ const PageSectionAbout = () => {
   ]
 
   return (
-    <div className="page-content__section__about">
+    <div id="Whoami" className="page-content__section__whoami">
       <p>
         IT Project Manager and Software Engineer with almost 14 years of
         experience. Focused on the overall quality of product and business
@@ -59,4 +59,4 @@ const PageSectionAbout = () => {
   )
 }
 
-export default PageSectionAbout
+export default PageSectionWhoami

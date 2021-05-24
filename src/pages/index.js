@@ -2,8 +2,8 @@ import React from "react"
 import PageLayout from "../components/PageLayout"
 import PageSection from "../components/section/PageSection"
 import StoreNavigation from "../store/StoreNavigation"
-import PageSectionHome from "../components/section/PageSectionHome"
-import PageSectionAbout from "../components/section/PageSectionAbout"
+import PageSectionHello from "../components/section/PageSectionHello"
+import PageSectionWhoami from "../components/section/PageSectionWhoami"
 import PageSectionProject from "../components/section/PageSectionProject"
 import { Provider } from "react-redux"
 
@@ -14,12 +14,12 @@ const index = () => {
     {
       key: "page_content_section_item_1",
       title: "#Hello",
-      content: <PageSectionHome />,
+      content: <PageSectionHello />,
     },
     {
       key: "page_content_section_item_2",
       title: "#Whoami",
-      content: <PageSectionAbout />,
+      content: <PageSectionWhoami />,
     },
     {
       key: "page_content_section_item_3",

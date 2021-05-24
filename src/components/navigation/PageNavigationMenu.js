@@ -11,30 +11,30 @@ const PageNavigationMenu = () => {
   const menuItems = [
     {
       key: "menu_item_1",
-      title: "Home",
+      title: "Hello",
       icon: <Filter1Rounded />,
-      url: "/",
-      alt: "Home",
+      url: "#Hello",
+      alt: "Hello",
     },
     {
       key: "menu_item_2",
-      title: "About",
+      title: "Whoami",
       icon: <Filter2Rounded />,
-      url: "/",
-      alt: "About",
+      url: "#Whoami",
+      alt: "Whoami",
     },
     {
       key: "menu_item_3",
       title: "Projects",
       icon: <Filter3Rounded />,
-      url: "/",
+      url: "#Projects",
       alt: "Projects",
     },
     {
       key: "menu_item_4",
       title: "Contact",
       icon: <Filter4Rounded />,
-      url: "/",
+      url: "#Contact",
       alt: "Contact",
     },
   ]
@@ -46,7 +46,7 @@ const PageNavigationMenu = () => {
           key={item.key}
           title={item.title}
           icon={item.icon}
-          url={item.url}
+          href={item.url}
           alt={item.alt}
         />
       ))}

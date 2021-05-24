@@ -5,27 +5,27 @@
 @use "./PageSectionProject.scss";
 @use "./PageSectionProjectItem.scss";
 
+$sectionBreakpoints: (
+  "540px": 1rem auto,
+  "768px": 1rem,
+  "1120px": 1rem auto,
+);
+
 .page-content__section {
-  margin: 1rem;
-  padding: 1rem;
+  // margin: 1rem 1rem 1rem 0;
+  padding: 1rem 1rem 0 1rem;
   max-width: var(--font-max-character-number);
   border: 1px solid;
   overflow: hidden;
   box-shadow: 5px 5px var(--color-section-secondary);
 
-  // p {
-  //   max-width: var(--font-max-character-number);
-  // }
-
-  @media (min-width: 540px) {
-    margin: 1rem auto;
+  h1 {
+    color: var(--color-font-extra);
   }
 
-  @media (min-width: 768px) {
-    margin: 1rem;
-  }
-
-  @media (min-width: 1120px) {
-    margin: 1rem auto;
+  @each $breakpointKey, $breakpointValue in $sectionBreakpoints {
+    @media (min-width: $breakpointKey) {
+      margin: $breakpointValue;
+    }
   }
 }

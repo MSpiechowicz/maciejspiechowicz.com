@@ -1,0 +1,15 @@
+.page-content__section__about {
+  ul {
+    padding-left: 1rem;
+  }
+
+  li {
+    margin-top: 1rem;
+    padding-inline-start: 0.2125rem;
+  }
+
+  li::marker {
+    content: "\261B";
+    color: var(--color-font-link);
+  }
+}

@@ -1,13 +1,17 @@
 .page-footer__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5125rem;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+  justify-self: center;
+  align-self: center;
+
+  & > * + * {
+    margin-top: 0.5125rem;
+  }
 
   ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
     margin: 0;

@@ -1,19 +1,16 @@
 $imageBreakpoints: (
-  "350px": 12.5rem 1fr,
-  "768px": 20rem 1fr,
+  "350px": 7.5rem,
+  "768px": 12.5rem,
 );
 
 .page-content__section__home--image {
-  display: grid;
-  align-items: baseline;
-
-  h4 {
-    padding-top: 5rem;
-  }
+  transform: scaleX(-1);
+  margin-left: 1rem;
+  float: right;
 
   @each $breakpointKey, $breakpointValue in $imageBreakpoints {
     @media (min-width: $breakpointKey) {
-      grid-template-columns: $breakpointValue;
+      width: $breakpointValue;
     }
   }
 }

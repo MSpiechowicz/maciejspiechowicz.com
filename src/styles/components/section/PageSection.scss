@@ -6,6 +6,26 @@
 @use "./PageSectionProjectItem.scss";
 
 .page-content__section {
-  margin-top: 1.5rem;
-  margin-inline: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: var(--font-max-character-number);
+  border: 1px solid;
+  overflow: hidden;
+  box-shadow: 5px 5px var(--color-section-secondary);
+
+  // p {
+  //   max-width: var(--font-max-character-number);
+  // }
+
+  @media (min-width: 540px) {
+    margin: 1rem auto;
+  }
+
+  @media (min-width: 768px) {
+    margin: 1rem;
+  }
+
+  @media (min-width: 1120px) {
+    margin: 1rem auto;
+  }
 }

@@ -21,6 +21,11 @@ const PageSectionAbout = () => {
     { key: "faq_item_10", data: "React, Vue and Flutter" },
     { key: "faq_item_11", data: "Scrum or Waterfall?" },
     { key: "faq_item_12", data: "Kanban :)" },
+    { key: "faq_item_13", data: "Favourite quote" },
+    {
+      key: "faq_item_14",
+      data: "Life is too short to do the things that you don't like doing",
+    },
   ]
 
   return (

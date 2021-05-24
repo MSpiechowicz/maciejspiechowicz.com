@@ -3,7 +3,7 @@ import PageSectionItem from "./PageSectionItem"
 
 const PageSection = ({ title = "", content = "" }) => {
   return (
-    <section className="page-content__section">
+    <section className="page-content__section color__background__section--main">
       {<h1>{title}</h1>}
       <PageSectionItem content={content} />
     </section>

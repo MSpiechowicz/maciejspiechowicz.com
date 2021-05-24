@@ -14,7 +14,6 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
 h1,
@@ -27,11 +26,6 @@ h6 {
   margin: 0;
 }
 
-// header,
-// section {
-//   padding: 1rem 0;
-// }
-
 .container {
   margin-inline: auto;
   width: 100%;
@@ -39,5 +33,5 @@ h6 {
 
 main {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }

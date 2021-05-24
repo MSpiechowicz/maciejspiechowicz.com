@@ -12,11 +12,10 @@ $sectionBreakpoints: (
 );
 
 .page-content__section {
-  // margin: 1rem 1rem 1rem 0;
+  margin: 1rem;
   padding: 1rem 1rem 0 1rem;
   max-width: var(--font-max-character-number);
   border: 1px solid;
-  overflow: hidden;
   box-shadow: 5px 5px var(--color-section-secondary);
 
   h1 {

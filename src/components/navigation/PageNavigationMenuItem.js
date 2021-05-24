@@ -1,8 +1,9 @@
 import React from "react"
 import { VISIBLE, HIDDEN } from "../../redux/ReduxActionType"
 import { useSelector, useDispatch } from "react-redux"
+import { Link } from "react-scroll"
 
-const PageNavigationItem = ({ icon, title, href, alt }) => {
+const PageNavigationItem = ({ href, icon, title }) => {
   const dispatch = useDispatch()
   const visible = useSelector(state => state.isVisible)
 
@@ -12,15 +13,17 @@ const PageNavigationItem = ({ icon, title, href, alt }) => {
 
   return (
     <div className="page-navigation__menu__item">
-      <a
-        href={href}
-        alt={alt}
+      <Link
         className="text__decoration--none"
+        to={href}
+        smooth={true}
+        offset={-100}
+        duration={1000}
         onClick={changeVisibility}
       >
         {icon}
         {title}
-      </a>
+      </Link>
     </div>
   )
 }

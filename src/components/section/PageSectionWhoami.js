@@ -38,7 +38,7 @@ const PageSectionWhoami = () => {
   ]
 
   return (
-    <div id="Whoami" className="page-content__section__whoami">
+    <div id="section-whoami" className="page-content__section__whoami">
       <p>
         IT Project Manager and Software Engineer with almost 14 years of
         experience. Focused on the overall quality of product and business

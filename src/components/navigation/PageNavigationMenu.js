@@ -11,31 +11,27 @@ const PageNavigationMenu = () => {
   const menuItems = [
     {
       key: "menu_item_1",
-      title: "Hello",
+      href: "section-hello",
       icon: <Filter1Rounded />,
-      url: "#Hello",
-      alt: "Hello",
+      title: "Hello",
     },
     {
       key: "menu_item_2",
-      title: "Whoami",
+      href: "section-whoami",
       icon: <Filter2Rounded />,
-      url: "#Whoami",
-      alt: "Whoami",
+      title: "Whoami",
     },
     {
       key: "menu_item_3",
-      title: "Projects",
+      href: "section-project",
       icon: <Filter3Rounded />,
-      url: "#Projects",
-      alt: "Projects",
+      title: "Project",
     },
     {
       key: "menu_item_4",
-      title: "Contact",
+      href: "section-contact",
       icon: <Filter4Rounded />,
-      url: "#Contact",
-      alt: "Contact",
+      title: "Contact",
     },
   ]
 
@@ -44,10 +40,9 @@ const PageNavigationMenu = () => {
       {menuItems.map(item => (
         <PageNavigationMenuItem
           key={item.key}
-          title={item.title}
+          href={item.href}
           icon={item.icon}
-          href={item.url}
-          alt={item.alt}
+          title={item.title}
         />
       ))}
     </div>

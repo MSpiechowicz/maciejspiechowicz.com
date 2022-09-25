@@ -1,21 +1,15 @@
 import React from 'react'
 
-function AppButton({ text, href, label, secondary }) {
+function AppBookButton({ text, href, secondary }) {
   return (
     <a
-      aria-label={label}
-      className={`p-2 md:p-3 lg:p-4 rounded-2xl text-sm md:text-lg lg:text-2xl
+      className={`app__book__button
         ${secondary ? "bg-white"
           : "bg-blue"}
         ${secondary ? "text-blue"
           : "text-white"}
         ${secondary ? "hover:bg-blue hover:text-white"
           : "hover:bg-white hover:text-blue"}
-        border-2
-        border-blue
-        transition
-        duration-300
-        ease-in-out
       `}
       href={href}
       rel="noreferrer"
@@ -25,4 +19,4 @@ function AppButton({ text, href, label, secondary }) {
   )
 }
 
-export default AppButton
+export default AppBookButton

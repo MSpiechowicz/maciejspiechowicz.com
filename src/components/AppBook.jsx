@@ -8,10 +8,10 @@ import AppTree from './AppTree'
 
 function AppBook() {
   return (
-    <div className="w-[350px] h-[500px] bg-white flex flex-row self-center rounded-l-2xl rounded-r-2xl shadow-3xl overflow-hidden">
-      <div className="bg-blue w-[25px] h-auto rounded-l-2xl"></div>
-      <div className="bg-blue w-[5px] h-auto ml-1"></div>
-      <div className="w-auto h-auto p-6 relative">
+    <div className="w-[350px] md:w-[500px] h-[500px] md:h-[650px] bg-white flex flex-row self-center rounded-l-2xl rounded-r-2xl shadow-3xl overflow-hidden relative">
+      <div className="bg-blue w-[25px] md:w-[30px] h-auto rounded-l-2xl"></div>
+      <div className="bg-blue w-[5px] md:w-[6px] h-auto ml-1"></div>
+      <div className="w-auto h-auto p-6 md:p-10 relative">
         <AppMountain />
         <AppTitle />
         <AppDescription />
@@ -19,7 +19,7 @@ function AppBook() {
         <AppTree />
         <AppMotto />
       </div>
-      <div className="bg-blue w-[10px] ml-2 h-[100px] flex flex-col self-center rounded-l-lg"></div>
+      <div className="absolute right-0 bg-blue w-[10px] md:w-[15px] h-[100px] flex flex-col self-center rounded-l-lg"></div>
     </div>
   )
 }

@@ -7,7 +7,7 @@ function AppMountain() {
       <img
         src={Mountain}
         alt="Mountain"
-        className="w-[250px] h-[250px]" />
+        className="w-[250px] md:w-[400px] h-[250px] md:h-[auto]" />
     </div>
   )
 }

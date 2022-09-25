@@ -7,7 +7,7 @@ function AppTree() {
       <img
         src={Tree}
         alt="Tree"
-        className="w-[155px] h-auto" />
+        className="w-[155px] md:w-[195px] h-auto" />
     </div>
   )
 }

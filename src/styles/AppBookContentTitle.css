@@ -1,0 +1,9 @@
+@layer components {
+  .app__book__content__title--top {
+    @apply flex flex-col gap-2 text-3xl md:text-5xl lg:text-7xl font-bold text-blue
+  }
+
+  .app__book__content__title--bottom {
+    @apply font-semibold text-xl md:text-3xl lg:text-5xl mt-1 md:mt-3 lg:mt-5
+  }
+}

@@ -1,0 +1,5 @@
+@layer components {
+  .app {
+    @apply h-[85vh] md:h-[100vh] w-screen flex flex-col justify-center self-center
+  }
+}

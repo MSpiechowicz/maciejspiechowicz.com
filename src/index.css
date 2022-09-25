@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,400&family=Nunito:wght@400;500;700&display=swap");
 
+@import "./styles/App.css";
+@import "./styles/AppBook.css";
+@import "./styles/AppBookButton.css";
+@import "./styles/AppBookContentContact.css";
+@import "./styles/AppBookContentDescription.css";
+@import "./styles/AppBookContentMotto.css";
+@import "./styles/AppBookContentMountain.css";
+@import "./styles/AppBookContentTitle.css";
+@import "./styles/AppBookContentTree.css";
+@import "./styles/AppBookDecoration.css";
 @import "./styles/Reset.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   background-color: rgba(16, 87, 162, .3);

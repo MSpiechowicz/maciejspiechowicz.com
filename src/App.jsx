@@ -3,7 +3,7 @@ import AppBook from './components/AppBook'
 
 function App() {
   return (
-    <div className="h-[85vh] md:h-[100vh] w-screen flex flex-col justify-center self-center">
+    <div className="app">
       <AppBook />
     </div>
   )

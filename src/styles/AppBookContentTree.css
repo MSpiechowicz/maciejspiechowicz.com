@@ -1,0 +1,9 @@
+@layer components {
+  .app__book__content__tree {
+    @apply absolute bottom-0 left-0
+  }
+
+  .app__book__content__tree__image {
+    @apply w-[155px] md:w-[195px] lg:w-[275px] h-auto
+  }
+}

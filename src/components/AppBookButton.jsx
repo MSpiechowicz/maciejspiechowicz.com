@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function AppBookButton({ text, href, secondary }) {
   return (
@@ -17,6 +18,16 @@ function AppBookButton({ text, href, secondary }) {
       {text}
     </a>
   )
+}
+
+AppBookButton.propTypes = {
+  text: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  secondary: PropTypes.bool,
+}
+
+AppBookButton.defaultProps = {
+  secondary: false,
 }
 
 export default AppBookButton

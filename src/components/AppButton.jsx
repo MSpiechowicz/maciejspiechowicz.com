@@ -4,7 +4,7 @@ function AppButton({ text, href, label, secondary }) {
   return (
     <a
       aria-label={label}
-      className={`p-2 md:p-3 rounded-2xl text-sm md:text-lg
+      className={`p-2 md:p-3 lg:p-4 rounded-2xl text-sm md:text-lg lg:text-2xl
         ${secondary ? "bg-white"
           : "bg-blue"}
         ${secondary ? "text-blue"

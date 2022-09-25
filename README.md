@@ -2,12 +2,13 @@
 Maciej Spiechowicz Website created with Vite and React version 18.
 
 | Technological Stack |
-| ---------- |
-| HTML 5     |
-| CSS        |
-| JavaScript |
-| React 18   |
-| Vite 3     |
+| ----------- |
+| HTML 5      |
+| CSS         |
+| JavaScript  |
+| React 18    |
+| Vite 3      |
+| TailwindCSS |
 
 ## Assets
 

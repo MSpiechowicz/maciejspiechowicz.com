@@ -1,5 +1,5 @@
 import React from 'react'
-import Mountain from '../assets/mountain.svg'
+import Mountain from '../assets/mountain.min.svg'
 
 function AppBookContentMountain() {
   return (

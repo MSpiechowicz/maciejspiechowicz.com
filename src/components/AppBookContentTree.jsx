@@ -1,5 +1,5 @@
 import React from 'react'
-import Tree from '../assets/tree.svg'
+import Tree from '../assets/tree.min.svg'
 
 function AppBookContentTree() {
   return (

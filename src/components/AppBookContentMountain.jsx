@@ -7,7 +7,10 @@ function AppBookContentMountain() {
       <img
         src={Mountain}
         alt="Mountain"
-        className="app__book__content__mountain__image" />
+        className="app__book__content__mountain__image"
+        width="100%"
+        height="100%"
+      />
     </div>
   )
 }

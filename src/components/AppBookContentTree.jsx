@@ -7,7 +7,10 @@ function AppBookContentTree() {
       <img
         src={Tree}
         alt="Tree"
-        className="app__book__content__tree__image" />
+        className="app__book__content__tree__image"
+        width="100%"
+        height="100%"
+      />
     </div>
   )
 }

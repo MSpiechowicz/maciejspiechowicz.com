@@ -9,7 +9,7 @@ function AppFooterItem(props: AppFooterItemProperty) {
       <a
       href={props.url}
       target="_blank noreferrer"
-      className="flex justify-center items-center gap-3 cursor-pointer hover:underline decoration-white decoration-2 underline-offset-4"
+      className="flex justify-center items-center gap-3 cursor-pointer hover:underline decoration-white decoration-2 underline-offset-4 outline-transparent outline-offset-4 outline-1 rounded-md"
       >
         <img
           src={props.src}

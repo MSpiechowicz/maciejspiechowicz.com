@@ -1,26 +1,27 @@
 import React from "react";
+import { AppFooterItemProperty } from "./index";
 
-interface AppFooterProps {
-  src: string;
-  alt: string;
-  name: string;
-}
-
-function AppFooterItem(props: AppFooterProps) {
+function AppFooterItem(props: AppFooterItemProperty) {
   return (
     <div
       className="w-fit h-auto justify-self-start items-center flex gap-3"
     >
-      <img
-        src={props.src}
-        alt={props.alt}
-        className="w-[32px] h-[32px]"
-      />
-      <span
-        className="max-[512px]:hidden text-white text font-bold text-[1.15rem]"
+      <a
+      href={props.url}
+      target="_blank noreferrer"
+      className="flex justify-center items-center gap-3 cursor-pointer hover:underline decoration-white decoration-2 underline-offset-4"
       >
-        {props.name}
-      </span>
+        <img
+          src={props.src}
+          alt={props.alt}
+          className="w-[32px] h-[32px]"
+        />
+        <span
+          className="max-[512px]:hidden text-white text font-bold text-[1.15rem]"
+        >
+          {props.name}
+        </span>
+      </a>
     </div>
   );
 }

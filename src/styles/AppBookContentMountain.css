@@ -1,9 +1,0 @@
-@layer components {
-  .app__book__content__mountain {
-    @apply absolute top-0 md:top-6 right-0
-  }
-
-  .app__book__content__mountain__image {
-    @apply w-[250px] md:w-[350px] lg:w-[450px] h-[250px] md:h-[auto]
-  }
-}

@@ -1,5 +1,0 @@
-@layer components {
-  .app__book__content__contact {
-    @apply mt-7 md:mt-6 lg:mt-8 flex flex-row gap-3
-  }
-}

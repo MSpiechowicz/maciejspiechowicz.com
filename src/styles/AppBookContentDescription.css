@@ -1,5 +1,0 @@
-@layer components {
-  .app__book__content__description {
-    @apply font-medium text-sm md:text-lg lg:text-2xl w-[30ch] md:w-[32ch] lg:w-[35ch] mt-8 lg:mt-12
-  }
-}
